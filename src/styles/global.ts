@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import { createGlobalStyle } from 'styled-components'
 
 export default createGlobalStyle`
   * {
@@ -9,8 +9,9 @@ export default createGlobalStyle`
   }
 
   body {
-    background: #F0F2F5 ;
-    -webkit-font-smoothing: antialiased
+    background: ${props => props.theme.colors.background} ;
+    -webkit-font-smoothing: antialiased;
+    transition: all 0.2s;
   }
 
   body, input, button {
@@ -20,4 +21,4 @@ export default createGlobalStyle`
   button {
     cursor: pointer;
   }
-`;
+`
